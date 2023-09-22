@@ -1,12 +1,11 @@
 #include "shell.h"
 
 /**
- * **parse - splits a string into words
- * @str: the input string
- * @d: the delimeter string
- * Return: a pointer to an array of strings, or NULL on failure
+ * parse - Divides a string into separate words
+ * @str: The input string to be divided
+ * @d: The delimiter string used for splitting
+ * Return: A pointer to an array of strings representing the words, or NULL on failure
  */
-
 char **parse(char *str, char *d)
 {
 	int i, j, k, m, numwords = 0;
@@ -49,10 +48,10 @@ char **parse(char *str, char *d)
 }
 
 /**
- * **strtow2 - splits a string into words
- * @str: the input string
- * @d: the delimeter
- * Return: a pointer to an array of strings, or NULL on failure
+ * strtow2 - Divides a string into individual words
+ * @str: The input string to be divided
+ * @d: The delimiter character used for splitting
+ * Return: A pointer to an array of strings representing the words, or NULL on failure
  */
 char **strtow2(char *str, char d)
 {

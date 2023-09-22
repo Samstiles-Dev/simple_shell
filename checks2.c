@@ -1,10 +1,9 @@
 include "shell.h"
 
 /**
- * _erratoi - convert a str to an integer
- * @s: the string to be converted
- * Return: 0 if no numbers in string, converted number otherwise
- *       -1 on error
+ * _erratoi - Converts a string to an integer
+ * @s: The input string to be converted
+ * Return: The converted integer if successful, -1 on error, or 0
  */
 int _erratoi(char *s)
 {
@@ -29,11 +28,10 @@ int _erratoi(char *s)
 }
 
 /**
- * print_error - prints an error message
- * @info: the parameter & return info struct
- * @estr: string containing specified error type
- * Return: 0 if no numbers in string, converted number otherwise
- *        -1 on error
+ * print_error - Prints an error message to the standard error stream
+ * @info: A pointer to the parameter and return information struct
+ * @estr: A string containing the specified error type or message
+ * Return: None
  */
 void print_error(info_t *info, char *estr)
 {
@@ -47,11 +45,11 @@ void print_error(info_t *info, char *estr)
 }
 
 /**
- * print_d - function prints a decimal (integer) number (base 10)
- * @input: the input
- * @fd: the filedescriptor to write to
+ * print_d - Prints a decimal (integer) number (base 10)
+ * @input: The integer to be printed
+ * @fd: The file descriptor to write the output to
  *
- * Return: number of characters printed
+ * Return: The number of characters printed
  */
 int print_d(int input, int fd)
 {
@@ -86,12 +84,12 @@ int print_d(int input, int fd)
 }
 
 /**
- * convert_number - converter function, a clone of itoa
- * @num: number
- * @base: base
- * @flags: argument flags
+ * convert_number - Converts a number to a string repre with a specified base
+ * @num: The number to be converted
+ * @base: The base for the conversion (e.g., decimal, hexadecimal, etc.)
+ * @flags: Optional argument flags
  *
- * Return: string
+ * Return: A string representation of the converted number
  */
 char *convert_number(long int num, int base, int flags)
 {
@@ -122,10 +120,10 @@ char *convert_number(long int num, int base, int flags)
 }
 
 /**
- * remove_comments - function replaces first instance of '#' with '\0'
- * @buf: address of the string to modify
+ * remove_comments - Replaces the first instance of '#' with '\0' in a string
+ * @buf: The address of the string to modify
  *
- * Return: Always 0;
+ * Return: Always 0
  */
 void remove_comments(char *buf)
 {

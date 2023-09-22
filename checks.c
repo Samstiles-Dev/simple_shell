@@ -3,7 +3,6 @@
 /**
  * active - Checks whether the shell is running in interactive mode
  * @info: A pointer to a struct containing shell information
- *
  * Return: 1 if the shell is in interactive mode, 0 otherwise
  */
 int active(info_t *info)
